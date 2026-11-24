@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.container {
+    width: calc(100% - 64px);
+    max-width: 1372px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 120px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 96px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 70px;
+}
+
+.header-nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+
+.hero-text {
+    width: 794px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 120%;
+    color: #212329;
+    text-transform: uppercase;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.hero-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-content-left img {
+    width: 329px;
+}
+
+.hero-content-left p {
+    width: 445px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.about-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-maintText {
+    width: 562px;
+}
+
+.about-maintText span {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.about-content {
+    width: 680px;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.about-content-start {
+    width: 446px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-content-start span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.about-content-end {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-content-end-info {
+    width: 146px;
+}
+
+.about-content-end-info p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.about-content-end-info span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.form-inner {
+    display: flex;
+    gap: 136px;
+}
+
+.form-inner-ticket {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.form-inner-ticket-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form-inner-ticket-text p {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.form-inner-ticket-text span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-inner-ticket form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-inner-ticket form input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 12px;
+}
+
+.form-inner-ticket form button {
+    background-color: black;
+    border-radius: 0;
+    padding: 12px 20px;
+    color: white;
+}
+
+.form-inner-download {
+    display: flex;
+    gap: 16px;
+}
+
+
+/* ===== Планшет ===== */
+@media (max-width: 1100px) {
+    header {
+        margin-bottom: 48px;
+    }
+
+    .section {
+        margin-bottom: 80px;
+    }
+
+    .header-nav {
+        gap: 32px;
+    }
+
+    .hero-text {
+        font-size: 52px;
+    }
+
+    .hero-content {
+        gap: 24px;
+    }
+
+    .hero-content-left,
+    .hero-content-right {
+        flex: 1;
+    }
+
+    .hero-content-left p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .hero-content-left img {
+        width: 100%;
+    }
+
+    .about-inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-maintText,
+    .about-content,
+    .about-content-start {
+        width: 100%;
+    }
+
+    .about-maintText span {
+        font-size: 40px;
+    }
+
+    .about-content {
+        margin-top: 0;
+    }
+
+    .about-content-end {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .form-inner {
+        gap: 48px;
+    }
+
+    .form-inner-img,
+    .form-inner-ticket {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .form-inner-ticket {
+        gap: 40px;
+    }
+
+    .form-inner-ticket-text p {
+        font-size: 36px;
+    }
+}
+
+
+/* ===== Телефон ===== */
+@media (max-width: 640px) {
+    header {
+        margin-bottom: 32px;
+    }
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .section {
+        margin-bottom: 56px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 24px;
+    }
+
+    .header-nav a {
+        font-size: 16px;
+    }
+
+    .hero-text {
+        font-size: 32px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-content-left {
+        gap: 20px;
+    }
+
+    .hero-content-left p {
+        font-size: 16px;
+    }
+
+    .about-inner {
+        gap: 24px;
+    }
+
+    .about-maintText span {
+        font-size: 28px;
+    }
+
+    .about-content {
+        gap: 32px;
+    }
+
+    .about-content-end {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .about-content-end-info {
+        width: calc(50% - 12px);
+    }
+
+    .about-content-end-info p {
+        font-size: 28px;
+    }
+
+    .form-inner {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .form-inner-ticket {
+        gap: 32px;
+    }
+
+    .form-inner-ticket-text {
+        gap: 16px;
+    }
+
+    .form-inner-ticket-text p {
+        font-size: 28px;
+    }
+
+    .form-inner-ticket form button {
+        width: 100%;
+    }
+
+    .form-inner-download {
+        flex-wrap: wrap;
+    }
+}
